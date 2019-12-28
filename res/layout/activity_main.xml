@@ -1,0 +1,399 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bj" >
+
+     <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <!-- +++++++++++++++++++++++++++++++++++++++++免责声明+++++++++++++++++++++++++++++++++++++ -->        
+            <TextView
+            android:id="@+id/tvNoDuty"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="免责声明"
+            android:textColor="#ff0000"
+            android:textSize="20sp" />
+         <TextView
+            android:id="@+id/tvNoDutyContent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="声明：该软件只用于学习研究娱乐，使用者不得用该软件进行赌博，本人一概不承担任何法律责任，如使用者使用，即表示同意。"
+            android:textColor="#ff0000"
+            android:textSize="16sp" />
+ <!-- ++++++++++++++++++++++++++++++++++++++++牛牛开关+++++++++++++++++++++++++++++++++++++ -->
+
+        <Switch
+            android:id="@+id/swNn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textOn="启用"
+            android:textOff="关闭"
+            android:text="牛牛开关" />
+        <Switch
+            android:id="@+id/swAutoRob"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textOn="启用"
+            android:textOff="关闭"
+            android:checked="true"
+            android:text="自动抢包" />
+        <Switch
+            android:id="@+id/swData"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textOn="启用"
+            android:textOff="关闭"
+            android:checked="true"
+            android:text="采集开关" />
+
+        <Switch
+            android:id="@+id/swAllPos"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textOn="启用"
+            android:checked="true"
+            android:textOff="关闭"
+            android:text="任意位置抢" />
+
+        <RadioGroup
+            android:id="@+id/rgNn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/rbSingle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="单尾牛牛玩法" />
+
+            <RadioButton
+                android:id="@+id/rbDouble"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="双尾牛牛玩法" />
+
+            <RadioButton
+                android:id="@+id/rbThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="三尾牛牛玩法" />
+
+            <RadioButton
+                android:id="@+id/rbHeaderTail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="首尾相加牛牛玩法" />
+
+            <RadioButton
+                android:id="@+id/rbPaiJiu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="牌九玩法" />
+            <RadioButton
+                android:id="@+id/rbSanGong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="三公玩法" />
+        </RadioGroup>
+
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:text="@string/nn_sel_type"
+            android:textColor="#ff0000"
+            android:textSize="16sp" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.24"
+            android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.24"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/ckN1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="牛1" />
+
+            <CheckBox
+                android:id="@+id/ckN2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="牛2" />
+
+            <CheckBox
+                android:id="@+id/ckN3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="牛3" />
+
+            <CheckBox
+                android:id="@+id/ckN4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="牛4" />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.24"
+            android:orientation="horizontal" >
+            <CheckBox
+                android:id="@+id/ckN5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="牛5" />
+
+            <CheckBox
+                android:id="@+id/ckN6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="牛6" />
+
+            <CheckBox
+                android:id="@+id/ckN7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="牛7" />
+
+            <CheckBox
+                android:id="@+id/ckN8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="牛8" />
+            </LinearLayout>
+            <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.24"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/ckN9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="牛9" />
+
+            <CheckBox
+                android:id="@+id/ckNn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="牛牛" />
+
+            <CheckBox
+                android:id="@+id/ckDouble"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="对子" />
+
+            <CheckBox
+                android:id="@+id/ckOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="顺子" />
+            </LinearLayout>
+            <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.24"
+            android:orientation="horizontal" >
+            <CheckBox
+                android:id="@+id/ckJn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="金牛" />
+
+            <CheckBox
+                android:id="@+id/ckMn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="满牛" />
+
+            <CheckBox
+                android:id="@+id/ckBaozi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="豹子" />
+            </LinearLayout>
+        </LinearLayout>
+<!-- +++++++++++++++++++++++语音模式 +++++++++++++++++++++++++++++++++++++++++++ -->
+        <TextView
+            android:id="@+id/tvSelSoundMode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:text="请选择发音模式："
+            android:textColor="#ff0000"
+            android:textSize="20sp" />
+  			<com.example.h3.FlowRadioGroup
+                android:id="@+id/rgSelSoundMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:orientation="horizontal" >
+                <RadioButton
+                    android:id="@+id/rbFemaleSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="女声" />
+                <RadioButton
+                    android:id="@+id/rbMaleSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="男声" />
+                <RadioButton
+                    android:id="@+id/rbSpecialMaleSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="特别男声" />
+                <RadioButton
+                    android:id="@+id/rbMotionMaleSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="情感男声" />
+                 <RadioButton
+                    android:id="@+id/rbChildrenSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="情感儿童声" />
+                <RadioButton
+                    android:id="@+id/rbCloseSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="关闭语音提示" />
+           </com.example.h3.FlowRadioGroup> 
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvSpeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="28dp"
+                android:layout_marginTop="14dp"
+                android:text="请设置精算速度:当前精算率：10"
+                android:textColor="#ff0000"
+                android:textSize="20sp" />
+
+            <SeekBar
+                android:id="@+id/seekBar1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:progress="10"
+                android:max="100" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="开启牛牛服务" />
+
+            <Button
+                android:id="@+id/btConcel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="启动微信" />
+              <Button
+                android:id="@+id/btClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="关闭" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvRegState"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:gravity="center"
+            android:text="授权状态：未授权"
+            android:textColor="#ff0000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvRegWarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:text="警告：未授权用户抢到小牛机率会有所增加！技术及授权联系QQ：1339524332微信byc6354。"
+            android:textColor="#ff0000"
+            android:textSize="16sp" />
+       <TextView
+            android:id="@+id/tvHomePage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
+            android:text="官方下载地址：\nhttp://119.23.68.205/android/android.htm"
+            android:textColor="#0000ff"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tvPlease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:text="请输入授权码："
+            android:textColor="#ff0000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etRegCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="12" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/btReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定" />
+    </LinearLayout>
+
+</ScrollView>
